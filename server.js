@@ -602,7 +602,7 @@ app.locals.users = [
 ];
 
 app.get("/api/v1/users", (request, response) => {
-  const artists = app.locals.users;
+  const users = app.locals.users;
 
   response.json({ users });
 });
