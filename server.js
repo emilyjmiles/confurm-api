@@ -18,7 +18,7 @@ app.locals.users = [
     pets: [
       {
         petId: 1,
-        image: '',
+        image: 'https://i.postimg.cc/dQHttxxM/Nova.jpg',
         name: 'Nova',
         type: 'Feline',
         age: 1,
@@ -165,7 +165,7 @@ app.locals.users = [
       },
       {
         petId: 2,
-        image: '',
+        image: 'https://i.postimg.cc/gJcmGVyk/Nebs.jpg',
         name: 'Nebula',
         type: 'Feline',
         age: 1,
