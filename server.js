@@ -86,44 +86,37 @@ app.locals.patients = [
       ],
       labs: [
         {
+          labId: 1,
           received: '6/1/2021',
-          dueNext: '6/1/2022',
-          type: 'FeLV/FIV/HW',
           results: 'negative x 3'
         },
         {
+          labId: 2,
           received: '6/1/2021',
-          dueNext: '6/1/2022',
-          type: 'Fecal',
           results: 'negative'
         },
         {
+          labId: 3,
           received: '9/27/2021',
-          dueNext: '',
-          type: 'CBC/Chem - Pre-Op Bloodwork',
           results: 'normal'
         },
       ],
       exams: [
         {
+          examId: 1,
           received: '6/1/2021',
-          dueNext: '6/1/2022',
-          type: 'Annual Exam',
         },
         {
+          examId: 2,
           received: '6/29/2021',
-          dueNext: '',
-          type: 'Medical Progress Exam',
         },
         {
+          examId: 1,
           received: '5/1/2022',
-          dueNext: '5/1/2023',
-          type: 'Annual Exam',
         },
         {
+          examId: 3,
           received: '6/10/2022',
-          dueNext: '',
-          type: 'Sick Exam',
         },
       ],
       weight: [1.6, 2.3, 3.4, 4.7, 7.1, 10.5, 11.75, 13],
@@ -151,129 +144,83 @@ app.locals.patients = [
     medHx: {
       dxList: [
         {
+          dxId: 2,
           dxDate: '7/1/2022',
-          condition: 'Asthma',
-          links: '',
         },
       ],
       vxs: [
         {
+          vxId: 1,
           received: '9/12/2021',
-          dueNext: '10/12/2021',
-          type: 'FVRCP (Distemper) series #1',
         },
         {
+          vxId: 2,
           received: '10/12/2021',
-          dueNext: '11/11/2021',
-          type: 'FVRCP (Distemper) series #2',
         },
         {
+          vxId: 11,
           received: '10/12/2021',
-          dueNext: '11/11/2021',
-          type: 'Rabies (PureVax) 1 yr',
         },
         {
+          vxId: 3,
           received: '11/11/2021',
-          dueNext: '1/11/2021',
-          type: 'FVRCP (Distemper) series #3',
         },
         {
+          vxId: 4,
           received: '1/11/2021',
-          dueNext: '4/11/2022',
-          type: 'FVRCP (Distemper) 6 month',
         },
         {
+          vxId: 7,
           received: '1/11/2021',
-          dueNext: '4/11/2022',
-          type: 'FeLV series',
         },
         {
+          vxId: 8,
           received: '2/10/2021',
-          dueNext: '2/10/2022',
-          type: 'FeLV series',
         },
         {
+          vxId: 5,
           received: '5/1/2022',
-          dueNext: '5/1/2025',
-          type: 'FVRCP (Distemper) 3 yr',
         },
         {
+          vxId: 11,
           received: '5/1/2022',
-          dueNext: '5/1/2023',
-          type: 'Rabies (PureVax) 1 yr',
         },
-      ],
-      labs: [
+      ], labs: [
         {
+          labId: 1,
           received: '9/12/2021',
-          dueNext: '10/12/2021',
-          type: 'FeLV/FIV/HW',
           results: 'negative x 3'
         },
         {
+          labId: 2,
           received: '9/12/2021',
-          dueNext: '10/12/2021',
-          type: 'Fecal',
           results: 'negative'
         },
         {
+          labId: 3,
           received: '1/11/2021',
-          dueNext: '',
-          type: 'CBC/Chem - Pre-Op Bloodwork',
           results: 'normal'
         },
       ],
       exams: [
         {
+          examId: 1,
           received: '9/12/2021',
-          dueNext: '10/12/2021',
-          type: 'Annual Exam',
         },
         {
+          examId: 2,
           received: '10/12/2021',
-          dueNext: '',
-          type: 'Medical Progress Exam',
         },
         {
+          examId: 1,
           received: '5/1/2022',
-          dueNext: '5/1/2023',
-          type: 'Annual Exam',
         },
         {
+          examId: 3,
           received: '7/1/2022',
-          dueNext: '',
-          type: 'Sick Exam',
-        },
-      ],
-      other: [
-        {
-          received: '9/12/2021',
-          dueNext: '',
-          type: 'Nail trim',
-        },
-        {
-          received: '11/11/2021',
-          dueNext: '',
-          type: 'Nail trim',
-        },
-        {
-          received: '1/11/2021',
-          dueNext: '',
-          type: 'Nail trim',
-        },
-        {
-          received: '5/1/2022',
-          dueNext: '',
-          type: 'Nail trim',
-        },
-        {
-          received: '7/1/2022',
-          dueNext: '',
-          type: 'Nail trim',
         },
       ],
       weight: [2.2, 3.6, 4.3, 6.5, 8, 9.25, 10, 11.75],
-      appts: [],
       meds: [
         {
           name: 'Gabapentin',
@@ -281,13 +228,13 @@ app.locals.patients = [
           instructions: '1 capsule 12 hours prior to an appointment or travel, then another 2 capsules 2-3 hours prior to appointment or travel'
         },
         {
-          name: 'Gabapentin',
-          strength: '100mg',
-          instructions: '1 capsule 12 hours prior to an appointment or travel, then another 2 capsules 2-3 hours prior to appointment or travel'
+          name: 'Prednisolone',
+          strength: '5mg',
+          instructions: 'Tappered course - 1 tablet twice daily for 3 days, then 1 tablet once daily for 3 days, then 1 tablet every other day for 3 doses'
         },
       ],
-      alerts: ['Polydactyl', 'Needs Gabapentin for Appointment Anxiety'],
-      notes: ['Light restraint only, panics easily'],
+      notes: ['Polydactyl', 'Needs Gabapentin for Appointment Anxiety', 'Light restraint only, panics easily'],
+      appts: [],
     }
   },
 ];
