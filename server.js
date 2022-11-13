@@ -248,14 +248,14 @@ app.locals.apptRequests = [
     id: 1,
     userName: 'Doug McNeil',
     petName: 'Fluffy',
-    reason: 'Fluffy hasn\'t pooped in 3 days and started throwing up this morning',
+    requestReason: 'Fluffy hasn\'t pooped in 3 days and started throwing up this morning',
     status: 'pending'
   },
   {
     id: 2,
-    userId: 'Claire Boon',
-    petId: 'Bella',
-    reason: 'Bella is due for her annual exam',
+    userName: 'Claire Boon',
+    petName: 'Bella',
+    requestReason: 'Bella is due for her annual exam',
     status: 'approved'
   }
 ];
