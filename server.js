@@ -243,28 +243,24 @@ app.get("/api/v1/patients", (request, response) => {
   response.json({ patients });
 });
 
-app.locals.requests = [
+app.locals.apptRequests = [
   {
-    appts: [
-      {
-        id: 1,
-        userId: 10,
-        petId: 100,
-        reason: 'Fluffy hasn\'t pooped in 3 days and started throwing up this morning',
-        status: 'pending'
-      },
-      {
-        id: 2,
-        userId: 20,
-        petId: 200,
-        reason: 'Bella is due for her annual exam',
-        status: 'approved'
-      }
-    ]
+    id: 1,
+    userId: 10,
+    petId: 100,
+    reason: 'Fluffy hasn\'t pooped in 3 days and started throwing up this morning',
+    status: 'pending'
+  },
+  {
+    id: 2,
+    userId: 20,
+    petId: 200,
+    reason: 'Bella is due for her annual exam',
+    status: 'approved'
   }
 ];
 
-app.get("/api/v1/requests", (request, response) => {
+app.get("/api/v1/apptRequests", (request, response) => {
   const requests = app.locals.requests;
 
   response.json({ requests });
