@@ -128,7 +128,6 @@ app.locals.patients = [
         },
       ],
       notes: ['Needs Gabapentin for Appointment Anxiety'],
-      appts: [],
     }
   },
   {
@@ -234,7 +233,6 @@ app.locals.patients = [
         },
       ],
       notes: ['Polydactyl', 'Needs Gabapentin for Appointment Anxiety', 'Light restraint only, panics easily'],
-      appts: [],
     }
   },
 ];
@@ -243,6 +241,33 @@ app.get("/api/v1/patients", (request, response) => {
   const patients = app.locals.patients;
 
   response.json({ patients });
+});
+
+app.locals.requests = [
+  {
+    appts: [
+      {
+        id: 1,
+        userId: 10,
+        petId: 100,
+        reason: 'Fluffy hasn\'t pooped in 3 days and started throwing up this morning',
+        status: 'pending'
+      },
+      {
+        id: 2,
+        userId: 20,
+        petId: 200,
+        reason: 'Bella is due for her annual exam',
+        status: 'approved'
+      }
+    ]
+  }
+];
+
+app.get("/api/v1/requests", (request, response) => {
+  const requests = app.locals.requests;
+
+  response.json({ requests });
 });
 
 app.listen(app.get("port"), () => {
