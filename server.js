@@ -246,15 +246,15 @@ app.get("/api/v1/patients", (request, response) => {
 app.locals.apptRequests = [
   {
     id: 1,
-    userId: 10,
-    petId: 100,
+    userName: 'Doug McNeil',
+    petName: 'Fluffy',
     reason: 'Fluffy hasn\'t pooped in 3 days and started throwing up this morning',
     status: 'pending'
   },
   {
     id: 2,
-    userId: 20,
-    petId: 200,
+    userId: 'Claire Boon',
+    petId: 'Bella',
     reason: 'Bella is due for her annual exam',
     status: 'approved'
   }
