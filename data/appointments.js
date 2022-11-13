@@ -12,6 +12,13 @@ const appointments = [
     patientName: 'Bella',
     requestReason: 'Bella is due for her annual exam',
     status: 'approved'
+  },
+  {
+    id: 3,
+    userName: 'John Rodger',
+    patientName: 'Shadow',
+    requestReason: 'Nail trim',
+    status: 'approved'
   }
 ];
 
