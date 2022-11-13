@@ -261,9 +261,9 @@ app.locals.apptRequests = [
 ];
 
 app.get("/api/v1/apptRequests", (request, response) => {
-  const requests = app.locals.requests;
+  const apptRequests = app.locals.apptRequests;
 
-  response.json({ requests });
+  response.json({ apptRequests });
 });
 
 app.listen(app.get("port"), () => {
