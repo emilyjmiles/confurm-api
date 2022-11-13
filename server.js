@@ -132,7 +132,7 @@ app.locals.patients = [
     }
   },
   {
-    petId: 2,
+    id: 2,
     image: 'https://i.postimg.cc/gJcmGVyk/Nebs.jpg',
     name: 'Nebula',
     type: 'Feline',
