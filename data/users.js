@@ -1,0 +1,15 @@
+const users = [
+  {
+    userId: 1,
+    name: 'Emily Miles',
+    address: '123 Cove Street, Bar Harbor, ME, 98765',
+    email: 'ijustreallylovecats@crazycatlady.com',
+    phone: '(987)654-3210',
+    pets: [
+      { petId: 1 },
+      { petId: 2 }
+    ]
+  },
+];
+
+module.exports = { users }; 

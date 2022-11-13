@@ -1,36 +1,4 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
-const bodyParser = require("body-parser");
-
-app.use(cors());
-app.use(bodyParser.json());
-
-app.set("port", process.env.PORT || 3001);
-
-app.locals.title = "PetParents";
-
-app.locals.users = [
-  {
-    userId: 1,
-    name: 'Emily Miles',
-    address: '123 Cove Street, Bar Harbor, ME, 98765',
-    email: 'ijustreallylovecats@crazycatlady.com',
-    phone: '(987)654-3210',
-    pets: [
-      { petId: 1 },
-      { petId: 2 }
-    ]
-  },
-];
-
-app.get("/api/v1/users", (request, response) => {
-  const users = app.locals.users;
-
-  response.json({ users });
-});
-
-app.locals.patients = [
+const patients = [
   {
     id: 1,
     image: 'https://i.postimg.cc/dQHttxxM/Nova.jpg',
@@ -239,44 +207,4 @@ app.locals.patients = [
   },
 ];
 
-app.get("/api/v1/patients", (request, response) => {
-  const patients = app.locals.patients;
-
-  response.json({ patients });
-});
-
-app.locals.apptRequests = [
-  {
-    id: 1,
-    userName: 'Doug McNeil',
-    patientName: 'Fluffy',
-    requestReason: 'Fluffy hasn\'t pooped in 3 days and started throwing up this morning',
-    status: 'pending'
-  },
-  {
-    id: 2,
-    userName: 'Claire Boon',
-    patientName: 'Bella',
-    requestReason: 'Bella is due for her annual exam',
-    status: 'approved'
-  }
-];
-
-app.get("/api/v1/apptRequests", (request, response) => {
-  const apptRequests = app.locals.apptRequests;
-
-  response.json({ apptRequests });
-});
-
-app.post("/api/v1/apptRequests", (request, response) => {
-  app.locals.apptRequests.push(request.body);
-  const apptRequests = app.locals.apptRequests;
-
-  response.send({ apptRequests });
-});
-
-app.listen(app.get("port"), () => {
-  console.log(
-    `${app.locals.title} is running on http://localhost:${app.get("port")}`
-  );
-});
+module.exports = { patients }; 
