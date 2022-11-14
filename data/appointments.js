@@ -27,7 +27,6 @@ const appointments = [
     requestReason: 'Gato has a bald spot that looks red and crusty',
     status: 'pending'
   }
-
 ];
 
 module.exports = { appointments }; 
