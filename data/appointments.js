@@ -19,7 +19,15 @@ const appointments = [
     patientName: 'Shadow',
     requestReason: 'Nail trim',
     status: 'approved'
+  },
+  {
+    id: 4,
+    userName: 'Bard Nyugen',
+    patientName: 'Gato',
+    requestReason: 'Gato has a bald spot that looks red and crusty',
+    status: 'pending'
   }
+
 ];
 
 module.exports = { appointments }; 
