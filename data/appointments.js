@@ -22,7 +22,7 @@ const appointments = [
   },
   {
     id: 4,
-    userName: 'Bard Nyugen',
+    userName: 'Barb Nyugen',
     patientName: 'Gato',
     requestReason: 'Gato has a bald spot that looks red and crusty',
     status: 'pending'
