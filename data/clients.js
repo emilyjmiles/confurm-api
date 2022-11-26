@@ -1,6 +1,6 @@
-const users = [
+const clients = [
   {
-    userId: 1,
+    clientId: 1,
     name: 'Emily Miles',
     address: '123 Cove Street, Bar Harbor, ME, 98765',
     email: 'ijustreallylovecats@crazycatlady.com',
@@ -12,4 +12,4 @@ const users = [
   },
 ];
 
-module.exports = { users }; 
+module.exports = { clients }; 
